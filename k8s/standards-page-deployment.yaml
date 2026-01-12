@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-reliability-standards
+  namespace: ai-reliability-standards
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ai-reliability-standards
+  template:
+    metadata:
+      labels:
+        app: ai-reliability-standards
+    spec:
+      imagePullSecrets:
+        - name: ghcr-pull-secret
+      containers:
+        - name: ai-reliability-standards
+          image: ghcr.io/exospherehost/ai-reliability-standards:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 60
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 60
