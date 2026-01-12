@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-reliability-standards
+  namespace: ai-reliability-standards
+spec:
+  type: ClusterIP
+  selector:
+    app: ai-reliability-standards
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP

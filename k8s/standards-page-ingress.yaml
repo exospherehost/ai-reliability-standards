@@ -1,0 +1,17 @@
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ai-reliability-standards
+  namespace: ai-reliability-standards
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`aire.exosphere.host`)
+      kind: Rule
+      services:
+        - name: ai-reliability-standards
+          namespace: ai-reliability-standards
+          port: 80
+  tls:
+    certResolver: letsencrypt
