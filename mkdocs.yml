@@ -1,73 +1,116 @@
 site_name: AI Reliability Standards
 site_url: https://aire.exosphere.host
 site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
-site_author: Exosphere
-repo_name: exosphere/ai-reliability-standards
-repo_url: https://github.com/exosphere/ai-reliability-standards
-docs_dir: docs
-edit_uri: edit/main/docs/
+site_author: ExosphereHost Inc. (exosphere.host)
+
+repo_name: exospherehost/ai-reliability-standards
+repo_url: https://github.com/exospherehost/ai-reliability-standards
+docs_dir: standards
+edit_uri: edit/main/standards/
 
 # Copyright Footer
-copyright: Copyright &copy; 2026 Exosphere
+copyright: Copyright &copy; 2026 ExosphereHost Inc.
 
 theme:
   name: material
-  # Logo & Favicon (Place these images in your docs/assets/ folder)
-  logo: assets/logo.png
-  favicon: assets/favicon.png
-  
-  # Color Palette (Toggle for Light/Dark mode)
-  palette: 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: deep purple
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.prune
+    - navigation.tabs
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: exosphere-light
+      toggle:
+        icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: deep purple
+      scheme: exosphere-dark
       toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: Switch to system preference
 
-  # Features
-  features:
-    - navigation.tabs        # Top-level tabs like a real product site
-    - navigation.sections    # Group sidebar items
-    - navigation.top         # "Back to Top" button
-    - navigation.instant     # SPA-like loading (very fast)
-    - search.suggest         # Search autocomplete
-    - search.highlight       # Highlight search terms
-    - content.code.copy      # Copy-to-clipboard button for code blocks
+extra:
+  homepage: https://exosphere.host
+  analytics:
+    provider: google
+    property: G-DY3QC6930Y
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/exospherehost/
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/exospherehost
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/zT92CAgvkj
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/exospherehost/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/exospherehost/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@exospherehost
 
-# Extensions to make your docs look "Technical"
+plugins:
+  - search
+  - git-authors
+  - git-revision-date-localized:
+      type: date
+  - llmstxt:
+      markdown_description: |
+        Exosphere is an open-source infrastructure platform for running AI agents and workflows at scale. It provides reliable execution, persistent state management, and failure handling for long-running AI processes.
+
+        Core Components:
+        - State Manager: FastAPI backend with MongoDB for workflow orchestration and state persistence
+        - Dashboard: Next.js web interface for monitoring and managing workflows
+        - Python SDK: Library for defining nodes, runtimes, and triggering workflows
+        - Docker Compose: Quick local setup with cloud or local MongoDB options
+
+        Key Features:
+        - Define reusable nodes (agents, API calls, code) that can be plugged into any workflow
+        - Create graph-based workflows with JSON configuration
+        - Dynamic state creation at runtime with infinite parallel execution
+        - Built-in retry policies and failure handling
+        - Persistent state management across workflow executions
+        - RESTful API for workflow management and monitoring
+
+        Quick Setup: Use Docker Compose with cloud MongoDB (recommended) or local MongoDB for development. Set MONGO_URI, STATE_MANAGER_SECRET, and other environment variables. SDK requires EXOSPHERE_STATE_MANAGER_URI and EXOSPHERE_API_KEY to connect to running instance.
+      sections:
+        Introduction:
+          - README.md
+
 markdown_extensions:
-  - admonition               # For colored "Note" and "Warning" blocks
-  - pymdownx.details         # For collapsible "Details" blocks
-  - pymdownx.superfences     # Better code blocks
-  - pymdownx.highlight:      # Syntax highlighting
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - toc:
-      permalink: true        # Adds the ¶ link next to headers for easy sharing
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
 
-# The Site Structure (Maps to your files)
+extra_css:
+  - stylesheets/extra.css
+
 nav:
-  - Home: index.md
-  - The Framework (AIRE):
-    - Introduction: framework/index.md
-    - '1. The Reliability Stack': framework/reliability-stack.md
-    - '2. Eval-Driven Development': framework/edd.md
-    - '3. Durable Execution': framework/durable-execution.md
-    - '4. Observability 2.0': framework/observability.md
-  - Operational Playbooks:
-    - Incident Response: playbooks/incident-response.md
-    - Human-in-the-Loop Handoffs: playbooks/human-handoff.md
-  - The 2026 Research:
-    - 'About the Study': research/study-overview.md
-    - 'Join the Winners Circle': research/participate.md
-  - Contributing: contributing.md
+  - Introduction: README.md
