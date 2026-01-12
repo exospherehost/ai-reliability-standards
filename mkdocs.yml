@@ -5,8 +5,8 @@ site_author: ExosphereHost Inc. (exosphere.host)
 
 repo_name: exospherehost/ai-reliability-standards
 repo_url: https://github.com/exospherehost/ai-reliability-standards
-docs_dir: standards
-edit_uri: edit/main/standards/
+docs_dir: docs
+edit_uri: edit/main/
 
 # Copyright Footer
 copyright: Copyright &copy; 2026 ExosphereHost Inc.
@@ -69,9 +69,6 @@ extra:
 
 plugins:
   - search
-  - git-authors
-  - git-revision-date-localized:
-      type: date
   - llmstxt:
       markdown_description: |
         The AI Reliability Standards (AIRE) is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
