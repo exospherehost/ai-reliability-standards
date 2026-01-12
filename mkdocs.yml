@@ -1,0 +1,73 @@
+site_name: AI Reliability Standards
+site_url: https://aire.exosphere.host
+site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
+site_author: Exosphere
+repo_name: exosphere/ai-reliability-standards
+repo_url: https://github.com/exosphere/ai-reliability-standards
+docs_dir: docs
+edit_uri: edit/main/docs/
+
+# Copyright Footer
+copyright: Copyright &copy; 2026 Exosphere
+
+theme:
+  name: material
+  # Logo & Favicon (Place these images in your docs/assets/ folder)
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  
+  # Color Palette (Toggle for Light/Dark mode)
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  # Features
+  features:
+    - navigation.tabs        # Top-level tabs like a real product site
+    - navigation.sections    # Group sidebar items
+    - navigation.top         # "Back to Top" button
+    - navigation.instant     # SPA-like loading (very fast)
+    - search.suggest         # Search autocomplete
+    - search.highlight       # Highlight search terms
+    - content.code.copy      # Copy-to-clipboard button for code blocks
+
+# Extensions to make your docs look "Technical"
+markdown_extensions:
+  - admonition               # For colored "Note" and "Warning" blocks
+  - pymdownx.details         # For collapsible "Details" blocks
+  - pymdownx.superfences     # Better code blocks
+  - pymdownx.highlight:      # Syntax highlighting
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true        # Adds the ¶ link next to headers for easy sharing
+
+# The Site Structure (Maps to your files)
+nav:
+  - Home: index.md
+  - The Framework (AIRE):
+    - Introduction: framework/index.md
+    - '1. The Reliability Stack': framework/reliability-stack.md
+    - '2. Eval-Driven Development': framework/edd.md
+    - '3. Durable Execution': framework/durable-execution.md
+    - '4. Observability 2.0': framework/observability.md
+  - Operational Playbooks:
+    - Incident Response: playbooks/incident-response.md
+    - Human-in-the-Loop Handoffs: playbooks/human-handoff.md
+  - The 2026 Research:
+    - 'About the Study': research/study-overview.md
+    - 'Join the Winners Circle': research/participate.md
+  - Contributing: contributing.md
