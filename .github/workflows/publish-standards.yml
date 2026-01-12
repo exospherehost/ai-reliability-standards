@@ -1,6 +1,9 @@
-name: Publish doc image to GHCR and Deploy to K8s
+name: Publish Standards image to GHCR and Deploy to K8s
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 env:
