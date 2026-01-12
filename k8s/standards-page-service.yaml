@@ -7,7 +7,6 @@ spec:
   type: ClusterIP
   selector:
     app: ai-reliability-standards
-    namespace: ai-reliability-standards
   ports:
     - port: 80
       targetPort: 80
