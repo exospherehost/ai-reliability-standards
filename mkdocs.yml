@@ -69,9 +69,6 @@ extra:
 
 plugins:
   - search
-  - git-authors
-  - git-revision-date-localized:
-      type: date
   - llmstxt:
       markdown_description: |
         The AI Reliability Standards (AIRE) is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
