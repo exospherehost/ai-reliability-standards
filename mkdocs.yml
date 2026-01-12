@@ -74,23 +74,16 @@ plugins:
       type: date
   - llmstxt:
       markdown_description: |
-        Exosphere is an open-source infrastructure platform for running AI agents and workflows at scale. It provides reliable execution, persistent state management, and failure handling for long-running AI processes.
+        The AI Reliability Standards (AIRE) is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
 
-        Core Components:
-        - State Manager: FastAPI backend with MongoDB for workflow orchestration and state persistence
-        - Dashboard: Next.js web interface for monitoring and managing workflows
-        - Python SDK: Library for defining nodes, runtimes, and triggering workflows
-        - Docker Compose: Quick local setup with cloud or local MongoDB options
+        This documentation defines the "Gold Standard" for AI Engineering across four core pillars:
+        
+        1. The Reliability Stack: Architectural patterns for separating probabilistic reasoning (LLMs) from deterministic guardrails.
+        2. Eval-Driven Development (EDD): Methodologies for moving from "vibes-based" testing to rigorous regression suites and "Golden Datasets."
+        3. Durable Execution: Standards for fault-tolerant, long-running agentic workflows, state persistence, and graceful degradation.
+        4. Observability 2.0: Best practices for tracing "Chain of Thought" (CoT), tool outputs, and debugging non-deterministic logic.
 
-        Key Features:
-        - Define reusable nodes (agents, API calls, code) that can be plugged into any workflow
-        - Create graph-based workflows with JSON configuration
-        - Dynamic state creation at runtime with infinite parallel execution
-        - Built-in retry policies and failure handling
-        - Persistent state management across workflow executions
-        - RESTful API for workflow management and monitoring
-
-        Quick Setup: Use Docker Compose with cloud MongoDB (recommended) or local MongoDB for development. Set MONGO_URI, STATE_MANAGER_SECRET, and other environment variables. SDK requires EXOSPHERE_STATE_MANAGER_URI and EXOSPHERE_API_KEY to connect to running instance.
+        This resource is intended for CTOs, AI Architects, and Engineering Leaders seeking proven patterns to scale agents from prototype to production.
       sections:
         Introduction:
           - README.md
