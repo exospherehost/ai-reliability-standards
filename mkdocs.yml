@@ -5,8 +5,8 @@ site_author: ExosphereHost Inc. (exosphere.host)
 
 repo_name: exospherehost/ai-reliability-standards
 repo_url: https://github.com/exospherehost/ai-reliability-standards
-docs_dir: standards
-edit_uri: edit/main/standards/
+docs_dir: docs
+edit_uri: edit/main/
 
 # Copyright Footer
 copyright: Copyright &copy; 2026 ExosphereHost Inc.

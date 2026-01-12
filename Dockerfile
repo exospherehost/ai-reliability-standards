@@ -20,7 +20,9 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev
 
 # Copy project files
-COPY . .
+RUN mkdir -p docs
+COPY mkdocs.yml ./
+COPY . ./docs/
 
 # Build the MkDocs site
 RUN uv run mkdocs build --strict --site-dir /app/site
