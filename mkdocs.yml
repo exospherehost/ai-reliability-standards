@@ -1,0 +1,109 @@
+site_name: AI Reliability Standards
+site_url: https://aire.exosphere.host
+site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
+site_author: ExosphereHost Inc. (exosphere.host)
+
+repo_name: exospherehost/ai-reliability-standards
+repo_url: https://github.com/exospherehost/ai-reliability-standards
+docs_dir: standards
+edit_uri: edit/main/standards/
+
+# Copyright Footer
+copyright: Copyright &copy; 2026 ExosphereHost Inc.
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.prune
+    - navigation.tabs
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: exosphere-light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: exosphere-dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  homepage: https://exosphere.host
+  analytics:
+    provider: google
+    property: G-DY3QC6930Y
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/exospherehost/
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/exospherehost
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/zT92CAgvkj
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/exospherehost/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/exospherehost/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@exospherehost
+
+plugins:
+  - search
+  - git-authors
+  - git-revision-date-localized:
+      type: date
+  - llmstxt:
+      markdown_description: |
+        The AI Reliability Standards (AIRE) is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
+
+        This documentation defines the "Gold Standard" for AI Engineering across four core pillars:
+        
+        1. The Reliability Stack: Architectural patterns for separating probabilistic reasoning (LLMs) from deterministic guardrails.
+        2. Eval-Driven Development (EDD): Methodologies for moving from "vibes-based" testing to rigorous regression suites and "Golden Datasets."
+        3. Durable Execution: Standards for fault-tolerant, long-running agentic workflows, state persistence, and graceful degradation.
+        4. Observability 2.0: Best practices for tracing "Chain of Thought" (CoT), tool outputs, and debugging non-deterministic logic.
+
+        This resource is intended for CTOs, AI Architects, and Engineering Leaders seeking proven patterns to scale agents from prototype to production.
+      sections:
+        Introduction:
+          - README.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Introduction: README.md
