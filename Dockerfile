@@ -3,7 +3,7 @@
 FROM python:3.12-slim as builder
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     && rm -rf /var/lib/apt/lists/*
 
@@ -23,7 +23,7 @@ RUN uv sync --frozen --no-dev
 COPY . .
 
 # Build the MkDocs site
-RUN uv run mkdocs build --strict
+RUN uv run mkdocs build --strict --site-dir /app/site
 
 # Stage 2: Production stage - serve built site
 FROM nginx:alpine
