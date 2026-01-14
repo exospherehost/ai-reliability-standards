@@ -2,7 +2,7 @@ site_name: AI Reliability Standards
 site_url: https://aire.exosphere.host
 site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
 
-repo_name: exospherehost/ai-reliability-standards
+repo_name: ai-reliability-standards
 repo_url: https://github.com/exospherehost/ai-reliability-standards
 docs_dir: docs
 edit_uri: edit/main/
@@ -35,18 +35,18 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: exosphere-light
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: exosphere-dark
+      scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
 
 extra:
-  homepage: https://exosphere.host
+  homepage: https://aire.exosphere.host
   analytics:
     provider: google
     property: G-DY3QC6930Y
@@ -68,7 +68,7 @@ plugins:
   - search
   - llmstxt:
       markdown_description: |
-        The AI Reliability Standards (AIRE) is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
+        The AI Reliability Engineering (AIRE) Standards is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
 
         This documentation defines the "Gold Standard" for AI Engineering across four core pillars:
         

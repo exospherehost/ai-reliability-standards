@@ -94,7 +94,7 @@ We welcome Pull Requests (PRs) from engineers who have solved specific reliabili
 
 ## 💖 Sponsors
 
-<a href="https://exosphere.host"><img src="./assets/exosphere-logo.svg" alt="ExosphereHost Inc." width="75"></a>
+<a href="https://exosphere.host"><img src="./assets/sponsors/exosphere.png" alt="ExosphereHost Inc." width="75"></a>
 
 Contact nivedit@exosphere.host to sponsor this work.
 
