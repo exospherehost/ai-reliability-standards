@@ -89,6 +89,7 @@ We are actively populating this repository with the success patterns from the st
 This standard belongs to the community.
 
 We welcome Pull Requests (PRs) from engineers who have solved specific reliability challenges.
+
 * See a missing pattern? Open a PR.
 * Want to debate a standard? Open an Issue.
 
