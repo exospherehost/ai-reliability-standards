@@ -12,7 +12,7 @@
 
 As AI systems move from "experimental" prototypes to "mission-critical" production environments, reliability has emerged as the single biggest barrier to adoption. 
 
-This repository serves as the **open standard** for **AI Reliability Engineering (AIRE)**. It documents the architectural patterns, testing frameworks, and guardrails that engineering teams use to achieve 99.9% reliability in non-deterministic systems.
+This repository serves as the **Open Standard for AI Reliability Engineering (AIRE)**. It documents the architectural patterns, testing frameworks, and guardrails that engineering teams use to achieve 99.9% reliability in non-deterministic systems and what does it even mean to be reliable in a non-deterministic system?. Further akin to SRE principles, this repository also documents principles for AI Reliability Engineering (AIRE)
 
 It is not a theoretical academic paper. It is a living collection of **"Success Patterns"** gathered from the top 1% of engineering teams currently running agents at scale.
 
@@ -42,17 +42,33 @@ We define the stability of an Agentic System through four core pillars:
 * **Chain of Thought (CoT) Logging:** Tracing logic, not just I/O.
 * **Cost Observability:** Real-time token tracking per tenant/workflow.
 
+### 5. Principles of AIRE
+*Guiding tenets for AI Reliability Engineering, inspired by SRE.*
+* **Embrace Non-Determinism:** Accept that identical inputs will produce variable outputs. Design systems that succeed despite variance, not systems that assume consistency.
+* **Reliability is a Feature:** Reliability competes with velocity for engineering resources. Treat it as a first-class product requirement with explicit budgets, not an afterthought.
+* **Measure, Don't Assume:** If you cannot quantify the reliability of your AI system, you do not have a reliable AI system. Intuition is not evidence.
+* **Fail Gracefully, Fail Informatively:** Every failure should preserve context, enable recovery, and generate learnings. Silent failures are unacceptable.
+* **Humans as Fallback, Not Crutch:** Design for autonomous operation. Human escalation is a safety net for edge cases, not a substitute for robust engineering.
+
 ---
 
-## 📚 The Research Study (2026)
+## 📚 Ongoing Research
 
-We are currently compiling the **2026 AI Reliability Playbook**, a comprehensive report based on interviews with engineering leaders from top-tier enterprises.
+This standard evolves through continuous dialogue with engineering teams operating AI systems in production. We conduct ongoing interviews with practitioners to surface new failure modes, validate emerging patterns, and refine existing guidance.
 
 **Are you running Agents in production?**
-We are looking for contributors to share their "War Stories" and architectural wins.
+We are actively seeking contributors to share their architectural decisions, operational challenges, and reliability wins.
 
-* **[Participate in the Study →](https://cal.com/outer-space/interview-ai-reliability-standards)**
-* **Benefits:** Contributors receive the final report, citation as an Industry Pioneer, and an exclusive **Exosphere Appreciation Hamper**.
+* **[Share Your Experience](https://cal.com/outer-space/interview-ai-reliability-standards)**
+**Why Contribute?**
+| Benefit | Details |
+|---------|---------|
+| **Shape the Standard** | Your operational insights become codified best practices. Influence how the industry approaches AI reliability for years to come |
+| **Industry Recognition** | Listed in the [Contributors Registry](CONTRIBUTORS.md) as a founding contributor to the AIRE Standard |
+| **Peer Network** | Join a private forum of engineering leaders exchanging reliability patterns across enterprises |
+| **Early Access** | Preview new sections and reference architectures before public release |
+
+*Plus, contributors receive a gift hamper from Exosphere as a thank you.*
 
 ---
 
