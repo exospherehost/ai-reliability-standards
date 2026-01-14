@@ -1,4 +1,4 @@
-# The AI Reliability Standard (AIRE)
+# The AI Reliability Engineering (AIRE) Standards
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Status: Draft](https://img.shields.io/badge/Status-Draft%20v0.1-orange)]()
@@ -94,7 +94,7 @@ We welcome Pull Requests (PRs) from engineers who have solved specific reliabili
 
 ## 💖 Sponsors
 
-<a href="https://exosphere.host"><img src="./assets/exosphere-logo.svg" alt="ExosphereHost Inc." width="150"></a>
+<a href="https://exosphere.host"><img src="./assets/exosphere-logo.svg" alt="ExosphereHost Inc." width="75"></a>
 
 Contact nivedit@exosphere.host to sponsor this work.
 
