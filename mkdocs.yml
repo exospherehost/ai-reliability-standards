@@ -1,7 +1,6 @@
 site_name: AI Reliability Standards
 site_url: https://aire.exosphere.host
 site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
-site_author: ExosphereHost Inc. (exosphere.host)
 
 repo_name: exospherehost/ai-reliability-standards
 repo_url: https://github.com/exospherehost/ai-reliability-standards
@@ -13,8 +12,6 @@ copyright: Copyright &copy; 2026 ExosphereHost Inc.
 
 theme:
   name: material
-  logo: assets/logo.svg
-  favicon: assets/logo.svg
   features:
     - content.action.edit
     - content.code.annotate

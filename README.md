@@ -2,7 +2,6 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Status: Draft](https://img.shields.io/badge/Status-Draft%20v0.1-orange)]()
-[![Maintained By: Exosphere](https://img.shields.io/badge/Maintained%20By-Exosphere-blue)](https://exosphere.host)
 
 > **Architectural standards and best practices for building reliable AI Agents and LLM workflows. Defining the framework for AI Reliability Engineering (AIRE).**
 
@@ -75,8 +74,7 @@ You get to shape the future of AI reliability engineering and get recognized for
 | **Industry Recognition** | Listed in the [Contributors Registry](CONTRIBUTORS.md) as a contributor to the standards of AI relibility |
 | **Peer Network** | Join a private forum of engineering leaders exchanging reliability patterns across enterprises |
 | **Early Access** | Preview new sections and reference architectures before public release |
-
-*Plus, contributors receive a gift hamper from Exosphere as a thank you.*
+| **Thank you gift** | We will send you a gift hamper courtesy to our sponsors |
 
 ---
 
@@ -88,14 +86,20 @@ We are actively populating this repository with the success patterns from the st
 
 ## 🤝 Contribution & Governance
 
-This standard is maintained by **[Exosphere](https://exosphere.host)**, but it belongs to the community.
+This standard belongs to the community.
 
 We welcome Pull Requests (PRs) from engineers who have solved specific reliability challenges.
 * See a missing pattern? Open a PR.
 * Want to debate a standard? Open an Issue.
 
+## 💖 Sponsors
+
+<a href="https://exosphere.host"><img src="./assets/exosphere-logo.svg" alt="ExosphereHost Inc." width="150"></a>
+
+Contact nivedit@exosphere.host to sponsor this work.
+
 ## 📄 License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-You are free to share and adapt this material for any purpose, even commercially, as long as you give appropriate credit to **ExosphereHost Inc**.
+You are free to share and adapt this material for any purpose, even commercially, as long as you give appropriate credit.
