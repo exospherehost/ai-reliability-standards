@@ -22,28 +22,33 @@ We define the stability of an Agentic System through four core pillars:
 
 ### 1. The Reliability Stack (Architecture)
 *Separating the "Brain" from the "Governor".*
+
 * **The Core Stack:** Probabilistic components (LLMs, Prompts) focused on reasoning.
 * **The Reliability Stack:** Deterministic components (Guardrails, Durable Queues, Verifiers) focused on safety.
 * **Principle:** Never rely on the LLM to police itself.
 
 ### 2. Eval-Driven Development (EDD)
 *Moving from "Vibes" to Engineering.*
+
 * **Golden Datasets:** Regression suites of 100+ questions run before every deploy.
 * **Unit Testing Agents:** Synthetic data tests for specific skills (e.g., API calling syntax).
 * **Metrics:** Standardized scoring for Hallucination Rate (<0.1%) and Groundedness.
 
 ### 3. Durable Execution & State
 *Fault tolerance for long-running workflows.*
+
 * **Resumability:** If an agent crashes on Step 4 of 10, it must resume at Step 4, not restart.
 * **Graceful Degradation:** Protocols for handing off to humans with full context when confidence drops.
 
 ### 4. Observability 2.0
 *Tracing the "Thought" Process.*
+
 * **Chain of Thought (CoT) Logging:** Tracing logic, not just I/O.
 * **Cost Observability:** Real-time token tracking per tenant/workflow.
 
 ### 5. Principles of AIRE
 *Guiding tenets for AI Reliability Engineering, inspired by SRE.*
+
 * **Embrace Non-Determinism:** Accept that identical inputs will produce variable outputs. Design systems that succeed despite variance, not systems that assume consistency.
 * **Reliability is a Feature:** Reliability competes with velocity for engineering resources. Treat it as a first-class product requirement with explicit budgets, not an afterthought.
 * **Measure, Don't Assume:** If you cannot quantify the reliability of your AI system, you do not have a reliable AI system. Intuition is not evidence.
