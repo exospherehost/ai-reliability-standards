@@ -61,10 +61,11 @@ We are actively seeking contributors to share their architectural decisions, ope
 
 * **[Share Your Experience](https://cal.com/outer-space/interview-ai-reliability-standards)**
 **Why Contribute?**
+
 | Benefit | Details |
 |---------|---------|
 | **Shape the Standard** | Your operational insights become codified best practices. Influence how the industry approaches AI reliability for years to come |
-| **Industry Recognition** | Listed in the [Contributors Registry](CONTRIBUTORS.md) as a founding contributor to the AIRE Standard |
+| **Industry Recognition** | Listed in the [Contributors Registry](CONTRIBUTORS.md) as a contributor to the standards of AI relibility |
 | **Peer Network** | Join a private forum of engineering leaders exchanging reliability patterns across enterprises |
 | **Early Access** | Preview new sections and reference architectures before public release |
 
