@@ -60,7 +60,9 @@ This standard evolves through continuous dialogue with engineering teams operati
 We are actively seeking contributors to share their architectural decisions, operational challenges, and reliability wins.
 
 * **[Share Your Experience](https://cal.com/outer-space/interview-ai-reliability-standards)**
+
 **Why Contribute?**
+You get to shape the future of AI reliability engineering and get recognized for your contributions.
 
 | Benefit | Details |
 |---------|---------|
