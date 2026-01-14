@@ -7,7 +7,7 @@
 
 ---
 
-## 📖 Introduction
+## Introduction
 
 As AI systems move from "experimental" prototypes to "mission-critical" production environments, reliability has emerged as the single biggest barrier to adoption. 
 
@@ -15,7 +15,7 @@ This repository serves as the **Open Standard for AI Reliability Engineering (AI
 
 It is not a theoretical academic paper. It is a living collection of **"Success Patterns"** gathered from the top 1% of engineering teams currently running agents at scale.
 
-## 🏗 Core Pillars of AIRE
+## Core Pillars of AIRE
 
 We define the stability of an Agentic System through four core pillars:
 
@@ -56,7 +56,7 @@ We define the stability of an Agentic System through four core pillars:
 
 ---
 
-## 📚 Ongoing Research
+## Ongoing Research
 
 This standard evolves through continuous dialogue with engineering teams operating AI systems in production. We conduct ongoing interviews with practitioners to surface new failure modes, validate emerging patterns, and refine existing guidance.
 
@@ -78,13 +78,13 @@ You get to shape the future of AI reliability engineering and get recognized for
 
 ---
 
-## 📂 Repository Structure (Coming Soon)
+## Repository Structure (Coming Soon)
 
 We are actively populating this repository with the success patterns from the study and the playbook.
 
 ---
 
-## 🤝 Contribution & Governance
+## Contribution & Governance
 
 This standard belongs to the community.
 
@@ -92,13 +92,13 @@ We welcome Pull Requests (PRs) from engineers who have solved specific reliabili
 * See a missing pattern? Open a PR.
 * Want to debate a standard? Open an Issue.
 
-## 💖 Sponsors
+## Sponsors
 
 <a href="https://exosphere.host"><img src="./assets/sponsors/exosphere.png" alt="ExosphereHost Inc." width="75"></a>
 
 Contact nivedit@exosphere.host to sponsor this work.
 
-## 📄 License
+## License
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
