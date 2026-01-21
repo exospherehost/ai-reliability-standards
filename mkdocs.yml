@@ -1,4 +1,4 @@
-site_name: AI Reliability Standards
+site_name: AI Reliability Engineering (AIRE) Standards
 site_url: https://aire.exosphere.host
 site_description: The open standard for AI Reliability Engineering (AIRE). Architectural patterns and best practices for production-grade Agents.
 
@@ -68,19 +68,19 @@ plugins:
   - search
   - llmstxt:
       markdown_description: |
-        The AI Reliability Engineering (AIRE) Standards is an open industry framework and playbook for building production-grade AI agents and reliable LLM workflows. Maintained by ExosphereHost Inc.
+        The AI Reliability Engineering (AIRE) Standards is an open industry framework for building production-grade AI agents. Maintained by ExosphereHost Inc.
 
-        This documentation defines the "Gold Standard" for AI Engineering across four core pillars:
-        
-        1. The Reliability Stack: Architectural patterns for separating probabilistic reasoning (LLMs) from deterministic guardrails.
-        2. Eval-Driven Development (EDD): Methodologies for moving from "vibes-based" testing to rigorous regression suites and "Golden Datasets."
-        3. Durable Execution: Standards for fault-tolerant, long-running agentic workflows, state persistence, and graceful degradation.
-        4. Observability 2.0: Best practices for tracing "Chain of Thought" (CoT), tool outputs, and debugging non-deterministic logic.
+        This implementation guide defines reliability engineering practices across four core pillars:
+
+        1. Resilient Architecture: Fault-tolerant design patterns for autonomous systems (circuit breakers, state management, fallback paths, elastic scaling).
+        2. Cognitive Reliability: Ensuring trustworthy outputs through self-reflection, structured outputs, human-in-the-loop protocols, and drift detection.
+        3. Quality & Lifecycle: Evals-driven deployment pipelines, golden datasets, feedback loops, and continuous improvement practices.
+        4. Security: Just-in-time privilege access, audit logging, guardrails, and defenses against adversarial inputs.
 
         This resource is intended for CTOs, AI Architects, and Engineering Leaders seeking proven patterns to scale agents from prototype to production.
       sections:
         Introduction:
-          - README.md
+          - index.md
 
 markdown_extensions:
   - attr_list
@@ -95,9 +95,24 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Introduction: README.md
+  - Home: 
+      - Home: index.md
+      - AIRE Principles: principles.md
+  - Getting Started: getting-started.md
+  - Pillars:
+      - Resilient Architecture: pillars/resilient-architecture.md
+      - Cognitive Reliability: pillars/cognitive-reliability.md
+      - Quality & Lifecycle: pillars/quality-lifecycle.md
+      - Security: pillars/security.md
+  - Appendix:
+      - Glossary: appendix/glossary.md
