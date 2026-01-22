@@ -1,7 +1,7 @@
 # The AI Reliability Engineering (AIRE) Standards
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: Draft](https://img.shields.io/badge/Status-Draft%20v0.1-orange)]()
+[![Status: Live](https://img.shields.io/badge/Status-Live%20v0.1-green)](https://github.com/exospherehost/ai-reliability-standards)
 
 > **An open implementation guide for building reliable AI Agents at scale. Defining the practices for AI Reliability Engineering (AIRE).**
 
@@ -109,7 +109,6 @@ Operational Excellence bridges the gap between technical architecture and organi
 
 ---
 
-
 ## AIRE Principles
 
 *Guiding tenets inspired by SRE:*
@@ -150,7 +149,6 @@ Design for autonomous operation. Human escalation is a safety net for edge cases
 
 ---
 
-
 ## Getting Started
 
 **New to AIRE?** Start with the **[Getting Started Guide →](getting-started.md)** for a step-by-step adoption roadmap:
@@ -189,17 +187,20 @@ You get to shape the future of AI reliability engineering and get recognized for
 
 ## Repository Structure
 
-```
-docs/
+This documentation is built from the [ai-reliability-standards repository](https://github.com/exospherehost/ai-reliability-standards). The repository structure includes:
+
+```text
+docs/                              # Documentation source files
+├── index.md                       # This page (documentation homepage)
 ├── getting-started.md             # Adoption roadmap for organizations
-├── pillars/
+├── principles.md                  # AIRE Principles (5 guiding tenets)
+├── pillars/                       # Core reliability pillars
 │   ├── resilient-architecture.md  # Pillar 1: Fault tolerance, scaling, recovery
 │   ├── cognitive-reliability.md   # Pillar 2: Accuracy, consistency, drift detection
 │   ├── quality-lifecycle.md       # Pillar 3: Testing, deployment, feedback loops
 │   ├── security.md                # Pillar 4: JIT access, guardrails, audit logs
-│   └── operational-excellence.md  # Pillar 5: SLAs, team structure, progressive autonomy
+│   └── operational-excellence.md  # Pillar 5: Performance targets, team structure, progressive autonomy
 └── appendix/
-    ├── principles.md              # AIRE Principles (5 guiding tenets)
     ├── metrics-framework.md       # Three-tier metrics framework
     └── glossary.md                # Key terms and definitions
 ```
@@ -219,7 +220,7 @@ We welcome Pull Requests (PRs) from engineers who have solved specific reliabili
 
 <a href="https://exosphere.host"><img src="./assets/sponsors/exosphere.png" alt="ExosphereHost Inc." width="75"></a>
 
-Contact nivedit@exosphere.host to sponsor this work.
+Contact nikita@exosphere.host to sponsor this work.
 
 ## License
 
