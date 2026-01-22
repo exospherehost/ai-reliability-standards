@@ -1,7 +1,7 @@
 # The AI Reliability Engineering (AIRE) Standards
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Status: Draft](https://img.shields.io/badge/Status-Draft%20v0.1-orange)]()
+[![Status: Live](https://img.shields.io/badge/Status-Live%20v0.1-green)](https://github.com/exospherehost/ai-reliability-standards)
 
 > **An open implementation guide for building reliable AI Agents at scale. Defining the practices for AI Reliability Engineering (AIRE).**
 
@@ -134,16 +134,16 @@ Security for AI agents differs from traditional software-agents are autonomous d
 
 ### 5. Operational Excellence & Team Culture
 
-*Establishing SLAs, error budgets, team structures, and operational practices that enable reliable AI systems to scale.*
+*Establishing performance targets, quality budgets, team structures, and operational practices that enable reliable AI systems to scale.*
 
 Operational Excellence bridges the gap between technical architecture and organizational culture. While the first four pillars define *what* to build, this pillar defines *how* teams operate, measure, and continuously improve AI systems at scale:
 
-- **AI-Specific SLAs & Error Budgets** - Service Level Objectives for availability, latency, quality, safety, and efficiency; error budget policies for balancing reliability with innovation velocity
+- **AI-Specific Performance Targets & Quality Budgets** - Performance targets for cognitive accuracy, safety integrity, autonomy level, response performance, and cost efficiency; quality budget policies for balancing reliability with innovation velocity
 - **Team Structure & Shared Responsibility** - Product teams own agents end-to-end; embedded AI Reliability Engineers (AIREs) with 20% time allocation; central platform team provides infrastructure
 - **Progressive Autonomy Maturity Model** - Five levels of agent autonomy (L0: Human-Driven → L4: Autonomous), reducing HITL rate from 100% to <5% over time
-- **Reliability Reviews** - Weekly metric reviews, monthly postmortems, error budget tracking, SLO compliance monitoring
+- **Reliability Reviews** - Weekly metric reviews, monthly postmortems, quality budget tracking, performance target compliance monitoring
 
-**Key Metrics:** SLO Compliance >95%, Error Budget Remaining >25%, HITL Rate <10%, Autonomy Level L3+, Time to Autonomy <6 months
+**Key Metrics:** Performance Target Compliance >95%, Quality Budget Remaining >50%, HITL Rate <10%, Autonomy Level L3+, Time to Autonomy <6 months
 
 📖 **[Read the full Operational Excellence guide →](docs/pillars/operational-excellence.md)**
 
@@ -187,19 +187,31 @@ You get to shape the future of AI reliability engineering and get recognized for
 
 ## Repository Structure
 
-```
-docs/
-├── getting-started.md             # Adoption roadmap for organizations
-├── pillars/
-│   ├── resilient-architecture.md  # Pillar 1: Fault tolerance, scaling, recovery
-│   ├── cognitive-reliability.md   # Pillar 2: Accuracy, consistency, drift detection
-│   ├── quality-lifecycle.md       # Pillar 3: Testing, deployment, feedback loops
-│   ├── security.md                # Pillar 4: JIT access, guardrails, audit logs
-│   └── operational-excellence.md  # Pillar 5: SLAs, team structure, progressive autonomy
-└── appendix/
-    ├── principles.md              # AIRE Principles (5 guiding tenets)
-    ├── metrics-framework.md       # Three-tier metrics framework
-    └── glossary.md                # Key terms and definitions
+This repository contains the source files for the AIRE Standards documentation and deployment infrastructure:
+
+```text
+.
+├── docs/                          # MkDocs documentation source
+│   ├── index.md                   # Documentation homepage 
+│   ├── getting-started.md         # Adoption roadmap for organizations
+│   ├── principles.md              # AIRE Principles (5 guiding tenets)
+│   ├── pillars/                   # Core reliability pillars
+│   │   ├── resilient-architecture.md  # Pillar 1: Fault tolerance, scaling, recovery
+│   │   ├── cognitive-reliability.md   # Pillar 2: Accuracy, consistency, drift detection
+│   │   ├── quality-lifecycle.md       # Pillar 3: Testing, deployment, feedback loops
+│   │   ├── security.md                # Pillar 4: JIT access, guardrails, audit logs
+│   │   └── operational-excellence.md  # Pillar 5: Performance targets, team structure, progressive autonomy
+│   └── appendix/
+│       ├── metrics-framework.md   # Three-tier metrics framework
+│       └── glossary.md            # Key terms and definitions
+├── assets/                        # Static assets (sponsor logos, images)
+├── k8s/                          # Kubernetes deployment manifests
+├── stylesheets/                  # Custom CSS for documentation
+├── mkdocs.yml                    # MkDocs configuration
+├── Dockerfile                    # Container image for documentation site
+├── pyproject.toml                # Python project dependencies
+├── README.md                     # GitHub repository homepage (this file)
+├── CONTRIBUTORS.md               # Contributors registry
 ```
 
 ---
@@ -215,7 +227,7 @@ We welcome Pull Requests (PRs) from engineers who have solved specific reliabili
 
 ## Sponsors
 
-<a href="https://exosphere.host"><img src="./assets/sponsors/exosphere.png" alt="ExosphereHost Inc." width="75"></a>
+<a href="https://exosphere.host"><img src="./docs/assets/sponsors/exosphere.png" alt="ExosphereHost Inc." width="75"></a>
 
 Contact nikita@exosphere.host to sponsor this work.        
 
