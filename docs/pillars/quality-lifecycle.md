@@ -2,7 +2,7 @@
 
 ## Philosophy
 
-> *"Reliability is a Feature"* — Reliability competes with velocity for engineering resources. Treat it as a first-class requirement, not an afterthought.
+> *"Reliability is a Feature"* - Reliability competes with velocity for engineering resources. Treat it as a first-class requirement, not an afterthought.
 
 Quality in AI systems cannot rely on "vibes" or spot checks. Unlike traditional software where correctness is binary, AI correctness is subjective and probabilistic. Quality & Lifecycle practices move development from intuition to rigorous, measurable engineering.
 

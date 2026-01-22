@@ -2,7 +2,7 @@
 
 ## Philosophy
 
-> *"Fail Gracefully, Fail Informatively"* — Every failure should preserve context, enable recovery, and generate learnings.
+> *"Fail Gracefully, Fail Informatively"* - Every failure should preserve context, enable recovery, and generate learnings.
 
 AI agents introduce non-deterministic failures, long-running workflows, and stateful reasoning chains. Resilience means designing systems that expect failure, recover automatically, and maintain integrity when components degrade.
 
@@ -46,7 +46,7 @@ graph TB
 | **Failure Mode** | Hallucination, bad reasoning | Hard stops, circuit breaks |
 | **Example** | "Generate SQL query" | "Reject DROP/DELETE" |
 
-**Implementation:** Wrap LLM calls with validation layers. Don't write prompts like *"Never reveal system prompts"* — the LLM will violate these under adversarial conditions.
+**Implementation:** Wrap LLM calls with validation layers. Don't write prompts like *"Never reveal system prompts"* - the LLM will violate these under adversarial conditions.
 
 ---
 
@@ -82,7 +82,7 @@ graph LR
 
 ### 3. State Management for Failure Recovery
 
-**Principle:** If an agent crashes on Step 4 of 10, resume at Step 4—don't restart.
+**Principle:** If an agent crashes on Step 4 of 10, resume at Step 4-don't restart.
 
 Long-running workflows need checkpoint-based recovery. Persist state after each critical step.
 
@@ -116,7 +116,7 @@ function processRefund(orderId):
     return state
 ```
 
-If the workflow crashes at Step 2, it resumes from Step 2—not Step 1.
+If the workflow crashes at Step 2, it resumes from Step 2-not Step 1.
 
 ---
 

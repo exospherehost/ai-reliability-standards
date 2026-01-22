@@ -2,9 +2,9 @@
 
 ## Philosophy
 
-> *"Measure, Don't Assume"* — If you cannot quantify reliability, you do not have a reliable system. Intuition is not evidence.
+> *"Measure, Don't Assume"* - If you cannot quantify reliability, you do not have a reliable system. Intuition is not evidence.
 
-Cognitive reliability addresses the correctness problem: ensuring outputs are accurate, grounded, and trustworthy. Unlike traditional software bugs (deterministic and reproducible), AI failures are probabilistic—hallucinations, drift, and inconsistency emerge unpredictably.
+Cognitive reliability addresses the correctness problem: ensuring outputs are accurate, grounded, and trustworthy. Unlike traditional software bugs (deterministic and reproducible), AI failures are probabilistic-hallucinations, drift, and inconsistency emerge unpredictably.
 
 **The goal:** Validate outputs, detect drift, and continuously improve through measurement.
 
@@ -116,7 +116,7 @@ function processWithSchema(userQuery):
 
 ### 3. Human-in-the-Loop (HITL) Protocols
 
-**Principle:** Use humans as a safety net for edge cases—not a crutch for poor engineering.
+**Principle:** Use humans as a safety net for edge cases-not a crutch for poor engineering.
 
 HITL adds human review for high-stakes or low-confidence decisions. The goal is to **reduce HITL over time** through active learning.
 

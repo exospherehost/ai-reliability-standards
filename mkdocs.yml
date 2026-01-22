@@ -70,12 +70,13 @@ plugins:
       markdown_description: |
         The AI Reliability Engineering (AIRE) Standards is an open industry framework for building production-grade AI agents. Maintained by ExosphereHost Inc.
 
-        This implementation guide defines reliability engineering practices across four core pillars:
+        This implementation guide defines reliability engineering practices across five core pillars:
 
         1. Resilient Architecture: Fault-tolerant design patterns for autonomous systems (circuit breakers, state management, fallback paths, elastic scaling).
         2. Cognitive Reliability: Ensuring trustworthy outputs through self-reflection, structured outputs, human-in-the-loop protocols, and drift detection.
         3. Quality & Lifecycle: Evals-driven deployment pipelines, golden datasets, feedback loops, and continuous improvement practices.
         4. Security: Just-in-time privilege access, audit logging, guardrails, and defenses against adversarial inputs.
+        5. Operational Excellence: Performance targets, quality budgets, team structures, progressive autonomy maturity model, and reliability review practices.
 
         This resource is intended for CTOs, AI Architects, and Engineering Leaders seeking proven patterns to scale agents from prototype to production.
       sections:
@@ -107,12 +108,14 @@ extra_css:
 nav:
   - Home: 
       - Home: index.md
-      - AIRE Principles: principles.md
-  - Getting Started: getting-started.md
+      - Getting Started: getting-started.md
+      - AIRE Principles: principles.md      
+      - Metrics Framework: appendix/metrics-framework.md
   - Pillars:
       - Resilient Architecture: pillars/resilient-architecture.md
       - Cognitive Reliability: pillars/cognitive-reliability.md
       - Quality & Lifecycle: pillars/quality-lifecycle.md
       - Security: pillars/security.md
+      - Team Culture: pillars/operational-excellence.md
   - Appendix:
       - Glossary: appendix/glossary.md

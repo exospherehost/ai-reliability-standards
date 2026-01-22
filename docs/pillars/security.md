@@ -2,7 +2,7 @@
 
 ## Philosophy
 
-> *"Embrace Non-Determinism"* — Design systems that succeed despite variance. Agents can be manipulated through adversarial inputs.
+> *"Embrace Non-Determinism"* - Design systems that succeed despite variance. Agents can be manipulated through adversarial inputs.
 
 Security for AI agents differs from traditional application security. Agents are autonomous decision-makers with dynamic reasoning, making them powerful but unpredictable. A single prompt can trick an agent into unauthorized actions. Security means **constraining autonomy without breaking functionality** through defense in depth.
 

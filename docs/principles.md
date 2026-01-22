@@ -2,7 +2,7 @@
 
 *Guiding tenets for AI Reliability Engineering, inspired by SRE.*
 
-These five principles define the philosophical foundation of AIRE. They inform the practices detailed in the four pillars and help teams make trade-off decisions when designing reliable AI systems.
+These five principles define the philosophical foundation of AIRE. They inform the practices detailed in the five pillars and help teams make trade-off decisions when designing reliable AI systems.
 
 ---
 
@@ -12,7 +12,7 @@ These five principles define the philosophical foundation of AIRE. They inform t
 
 ### What It Means
 
-Traditional software is deterministic: same input → same output, always. AI systems are probabilistic: same input → different outputs across runs. This is not a bug — it's inherent to how LLMs work.
+Traditional software is deterministic: same input → same output, always. AI systems are probabilistic: same input → different outputs across runs. This is not a bug - it's inherent to how LLMs work.
 
 **Bad Response:** "We need to make the AI deterministic by lowering temperature to 0 and using seed values."
 
@@ -32,8 +32,8 @@ Traditional software is deterministic: same input → same output, always. AI sy
 
 ### Related Patterns
 
-- **[Pillar 1: Resilient Architecture](./pillars/resilient-architecture.md)** — Fallback paths, circuit breakers
-- **[Pillar 4: Security](./pillars/security.md)** — Adversarial robustness through guardrails
+- **[Pillar 1: Resilient Architecture](./pillars/resilient-architecture.md)** - Fallback paths, circuit breakers
+- **[Pillar 4: Security](./pillars/security.md)** - Adversarial robustness through guardrails
 
 ---
 
@@ -43,7 +43,7 @@ Traditional software is deterministic: same input → same output, always. AI sy
 
 ### What It Means
 
-Reliability is not "free" — it requires engineering time, infrastructure cost, and operational overhead. Teams must explicitly budget for reliability work (golden datasets, observability, guardrails) alongside feature work.
+Reliability is not "free" - it requires engineering time, infrastructure cost, and operational overhead. Teams must explicitly budget for reliability work (golden datasets, observability, guardrails) alongside feature work.
 
 **Bad Response:** "We'll worry about reliability after we launch."
 
@@ -63,7 +63,7 @@ Reliability is not "free" — it requires engineering time, infrastructure cost,
 
 ### Related Patterns
 
-- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** — Evals-driven deployments, feedback loops
+- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** - Evals-driven deployments, feedback loops
 
 ---
 
@@ -93,8 +93,8 @@ Reliability is not "free" — it requires engineering time, infrastructure cost,
 
 ### Related Patterns
 
-- **[Pillar 2: Cognitive Reliability](./pillars/cognitive-reliability.md)** — Hallucination rate, groundedness score
-- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** — Golden datasets, offline/online evals
+- **[Pillar 2: Cognitive Reliability](./pillars/cognitive-reliability.md)** - Hallucination rate, groundedness score
+- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** - Golden datasets, offline/online evals
 
 ---
 
@@ -119,7 +119,7 @@ Failures will happen (see Principle 1: Embrace Non-Determinism). The question is
 
 - **State management:** Save checkpoints so workflows can resume after crash
 - **Logging:** Log Chain of Thought reasoning, not just inputs/outputs
-- **User experience:** Never show raw LLM errors — translate to user-friendly messages
+- **User experience:** Never show raw LLM errors - translate to user-friendly messages
 
 ### Anti-Patterns
 
@@ -129,8 +129,8 @@ Failures will happen (see Principle 1: Embrace Non-Determinism). The question is
 
 ### Related Patterns
 
-- **[Pillar 1: Resilient Architecture](./pillars/resilient-architecture.md)** — State management, circuit breakers, fallback paths
-- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** — Chain of Thought logging
+- **[Pillar 1: Resilient Architecture](./pillars/resilient-architecture.md)** - State management, circuit breakers, fallback paths
+- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** - Chain of Thought logging
 
 ---
 
@@ -160,14 +160,14 @@ HITL (Human-in-the-Loop) is essential for high-stakes decisions, but if 50% of r
 
 ### Related Patterns
 
-- **[Pillar 2: Cognitive Reliability](./pillars/cognitive-reliability.md)** — HITL protocols, confidence calibration
-- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** — Feedback loops, golden dataset updates
+- **[Pillar 2: Cognitive Reliability](./pillars/cognitive-reliability.md)** - HITL protocols, confidence calibration
+- **[Pillar 3: Quality & Lifecycle](./pillars/quality-lifecycle.md)** - Feedback loops, golden dataset updates
 
 ---
 
 ## Applying the Principles
 
-These principles are not rules — they're guides for making trade-off decisions. When facing a design choice, ask:
+These principles are not rules - they're guides for making trade-off decisions. When facing a design choice, ask:
 
 1. **Embrace Non-Determinism:** Am I designing for consistency or resilience?
 2. **Reliability is a Feature:** How much engineering time am I allocating to reliability?

@@ -342,10 +342,10 @@ Track these metrics to measure AIRE adoption progress:
 
 ## Resources
 
-- **[Pillar 1: Resilient Architecture](pillars/resilient-architecture.md)** — Start here for infrastructure patterns
-- **[Pillar 2: Cognitive Reliability](pillars/cognitive-reliability.md)** — Start here for output quality
-- **[Pillar 3: Quality & Lifecycle](pillars/quality-lifecycle.md)** — Start here for testing and deployment
-- **[Pillar 4: Security](pillars/security.md)** — Start here for adversarial robustness
+- **[Pillar 1: Resilient Architecture](pillars/resilient-architecture.md)** - Start here for infrastructure patterns
+- **[Pillar 2: Cognitive Reliability](pillars/cognitive-reliability.md)** - Start here for output quality
+- **[Pillar 3: Quality & Lifecycle](pillars/quality-lifecycle.md)** - Start here for testing and deployment
+- **[Pillar 4: Security](pillars/security.md)** - Start here for adversarial robustness
 
 ---
 
